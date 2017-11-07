@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{70F3A751-AE2E-4FCD-875E-21100392146F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PuzzleGlisant</RootNamespace>
+    <AssemblyName>PuzzleGlisant</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\Controller.cs" />
+    <Compile Include="Model\ImaginiData.cs" />
+    <Compile Include="Model\Puzzle.cs" />
+    <Compile Include="Model\Scor.cs" />
+    <Compile Include="Model\ScoruriData.cs" />
+    <Compile Include="Model\SetariData.cs" />
+    <Compile Include="Model\Timp.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Scoruri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Scoruri.Designer.cs">
+      <DependentUpon>Scoruri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Setari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Setari.Designer.cs">
+      <DependentUpon>Setari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UI.Designer.cs">
+      <DependentUpon>UI.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="View\Scoruri.resx">
+      <DependentUpon>Scoruri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Setari.resx">
+      <DependentUpon>Setari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UI.resx">
+      <DependentUpon>UI.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pyramids.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Earth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tiger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dices.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SportsCar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Numbers4x4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Numbers5x5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Numbers6x6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pauza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Backgrounnd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picContinuaHovered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picContinuaNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picContinuaPressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picIesireHovered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picIesireNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picIesirePressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picJocNouHovered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picJocNouNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picJocNouPressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picPauzaHovered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picPauzaNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picPauzaPressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picResetHovered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picResetNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picResetPressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picScoruriHovered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picScoruriNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picScoruriPressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picSetariHovered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picSetariNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picSetariPressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picJocNouDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picPauzaDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picResetDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picSetariDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picNume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picDificultate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picImagine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picInchideSetarileNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picInchideSetarilePressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picSalveazaSetarileHovered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picSalveazaSetarileNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picSalveazaSetarilePressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picInchideSetarileHovered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picSalveazaSetarileDisabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Numbers3x3.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
